@@ -1,0 +1,479 @@
+/* ------------------------
+Common Section Css Start 
+------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* 
+#about h2::after,
+#mywork h2::after,
+#contact-me h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 56px;
+    background: white;
+    border-left: 2px solid #ffffff;
+    animation: typing 3s steps(50) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -100px 0 46px;
+    }
+
+} */
+.container{
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav{
+    background-color: #02918c;
+    display: flex;
+    padding: 23px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+    margin-top: 97px;
+}
+
+.container .section-info{
+    margin: auto;
+    width: 880px;
+}
+
+.section-info p{
+    margin-top: 35px;
+    color: #7e8287;
+    font-size: 16px;
+    margin:79px auto;
+}
+
+/* ------------------------
+Common Section Css End 
+------------------------*/
+
+
+
+
+/* ------------------------
+    Nav Section Css Start 
+   ------------------------*/
+nav div.logo{
+    width: 20%;
+}
+
+nav div.menu{
+    width: 80%;
+}
+
+nav div ul li a{
+    color: #fff;
+    padding: 27px;
+    text-transform: uppercase; 
+    font-size: 12px;   
+    font-weight: 800;
+    position: relative;
+}
+
+
+nav div ul li a.active{
+    color: #cfc91d;
+    font-size: 14px;
+}
+nav div ul li a:hover
+{
+    transition: .5s;
+    color: #1f1f1f;
+    font-size: 15px; 
+}
+
+/* ------------------------
+     Nav Section Css End 
+   ------------------------*/
+
+
+
+
+/* ------------------------
+    Banner Section Css Start 
+   ------------------------*/
+#banner{
+    background-image: url(../img/banner_bg.jpg);
+    height: 728px;
+    background-size: cover;    
+    position: relative;
+    z-index: 1;    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#banner::before{
+    content: '';
+    position: absolute;
+    background:linear-gradient(36deg, #0d7f7b, #cfc91d);
+    width: 100%;
+    height: 100%;
+    opacity: .24;
+    z-index: -1;
+}
+
+#banner::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    opacity: .55;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#banner .container{
+    text-align: center;
+    margin: auto;
+    color:#fff;
+}
+
+#banner h4{
+    font-size: 30px;
+}
+
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 26px ;
+    text-transform: uppercase;
+}
+
+#banner p{
+    font-size: 18px;
+}
+
+#banner img{
+    display: block;
+    margin: 50px auto;
+}
+
+#banner a{
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    color: #0b1016;
+    border: 1px solid #cfc91d;
+    padding: 19px 43px;
+}
+
+
+#banner a:hover{
+    transition: .6s;
+    animation: animate .6s;
+    animation-delay: .2s;
+}
+
+@keyframes animate{
+    
+
+    50%{
+        letter-spacing: -10px;
+    }
+    
+    75%{
+        letter-spacing: 8px;
+    }
+
+    100%{
+        letter-spacing: 0px;
+    }
+}
+
+/* ------------------------
+    Banner Section Css End 
+   ------------------------*/
+
+
+/* ---------------------------------
+        About Section Css Start 
+   ---------------------------------*/
+
+
+#about p b{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.about-info{
+    width: 25%;
+    padding: 36px 59px 54px 59px;
+    border-right: 2px solid #d9dbdb;
+    color: #7e8287;
+    margin-top: 80px;
+}
+
+.about-info h5{
+    font-size: 16px;
+    font-weight: 800;
+    padding-top: 36px;
+    position: relative;
+}
+
+.about-info p{
+    font-size: 11px;
+    padding-top: 0;
+    padding-top: 30px;
+}
+.about-info:last-child{
+    border: none;
+}
+
+/*----------------------------------
+        About Section Css End 
+----------------------------------*/
+
+
+
+
+/* ---------------------------------
+       Services Section Css Start 
+   ---------------------------------*/
+
+#services{
+    background-image: url(../img/services-bg.jpg);
+    width: 100%;
+    background-size: cover;
+    color: #7e8287;
+}
+
+
+.section-info h2{
+    padding-top: 39px;
+    animation: text 3s infinite;
+}
+
+@keyframes text{
+
+    45%{
+        letter-spacing: 20px;
+    }
+
+    100%{
+        letter-spacing: 0;
+    }
+}
+
+
+
+
+
+.section-info p{
+    margin-top: 36px;
+    margin-bottom: -2px;
+}
+
+#services .row div{
+    width: 50%;
+}
+
+#services .inner-container{
+    width: 50%;
+}
+
+#services .inner-container .section-info{
+    text-align: left;
+    width: 100%;
+}
+
+#services .row .service-item p{
+    font-size: 11px;
+}
+
+
+#services .row .service-item{
+    text-align: left;
+    padding: 25px 120px 25px 0px;
+}
+
+#services .row{
+    padding-bottom: 86px; 
+    margin-top: 59px;
+}
+
+.service-item h5{
+    font-size: 16px;
+    font-weight: 800;
+    margin: 21px 0px;
+}
+/*----------------------------------
+      Services Section Css End 
+----------------------------------*/
+
+
+
+/*----------------------------------
+    My Work Section Css Start 
+----------------------------------*/
+
+#mywork .section-info{
+    width: 683px;
+    margin-bottom: 78px;
+}
+
+#mywork .section-info p{
+    margin-top: 32px;
+}
+
+#mywork .mywork-images{
+    width: 25%; 
+    position: relative;
+}
+
+#mywork .mywork-images img{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay{
+    position:absolute;
+    top: 22px;
+    left: 27px;
+    padding:58px 39px 27px 39px;
+    right: 27px;
+    bottom:22px;
+    background-color: rgba(2, 145, 139, .75);
+    opacity: 0;
+    border-radius: 50%;
+    transform:rotate(180deg);
+    text-align: center;
+}
+.overlay:hover{
+    opacity: 1;
+    transition: .9s;
+    border-radius: 0;
+    transform: rotate(360deg);
+}
+
+.overlay h5{
+    font-size: 16px;
+    font-weight: 800;
+    padding-bottom: 14px;
+}
+
+.overlay p{
+    font-size: 13px;
+}
+
+/*----------------------------------
+       My Work Section Css End 
+----------------------------------*/
+
+
+/*----------------------------------
+    Contact Me Section Css Start 
+----------------------------------*/
+
+#contact-me .section-info p{
+    font-size: 16px;
+    width: 683px;
+    margin-top: 30px;
+}
+
+.another-contact-info{
+    background-color: #0a0a0b;
+    margin-top: 70px;
+    padding-bottom: 83px;
+}
+#contact-me .another-contact-info input,
+#contact-me .another-contact-info textarea {
+    display: block;
+    margin: auto;
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-align:center;
+    padding-top: 83px ;
+    border-bottom: 1px solid #7e8287;
+    width: 637px;
+    color: #d9dbdb;
+}
+
+
+#contact-me .another-contact-info input::placeholder
+#contact-me .another-contact-info textarea::placeholder{
+text-transform: uppercase;
+}
+
+#contact-me .another-contact-info input.last-item,
+#contact-me .another-contact-info textarea{
+    width: 920px;
+    resize: none;
+}
+
+#contact-me .another-contact-info button{
+    display: block;
+    margin:83px auto 0px auto;
+    width: 196px;
+    height: 47px;
+    background:#cfc91d;
+    background-size: 800%;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+
+#contact-me .another-contact-info button:hover{ 
+    transition: .4s;
+    transform: translate(0%, 20%);
+    background: #a5bad4;
+
+}
+
+
+/*----------------------------------
+     Contact Me Section Css End 
+----------------------------------*/
+
+
+/*----------------------------------
+    Footer Section Css Start 
+----------------------------------*/
+
+#footer{
+    background-color: black;
+    color: #d9dbdb;
+    font-size: 12px;
+    text-align: center;
+    padding: 30px;
+}
+
+/*----------------------------------
+    Footer Section Css End 
+----------------------------------*/
